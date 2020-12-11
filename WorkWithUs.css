@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ITC Officina Sans Std Book";
+}
+body {
+  background: #f1f3f6;
+}
+html {
+  /*scroll-behavior: smooth;*/
+}
+.navbar-brand {
+  font-size: 20px;
+  margin-top: 5px !important;
+  margin-bottom: -10px !important;
+}
+.navbar-brand p {
+  font-size: 14px;
+  margin-top: -10px;
+}
+.nav-item a,
+.navbar-brand {
+  color: #2ecab6 !important;
+}
+.nav-link {
+  font-weight: bold !important;
+}
+.blink {
+  width: 50px;
+  height: 20px;
+  background: red;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: -12px !important;
+  margin-left: 50px;
+}
+.bl {
+  margin-left: 80px;
+}
+@media (max-width: 992px) {
+  .blink {
+    margin-top: 15px !important;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand {
+    padding-left: 0 !important;
+  }
+  /*
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-brand p {
+    font-size: 12px;
+  }*/
+}
+@media (max-width: 386px) and (min-width: 381px) {
+  .img1 {
+    width: auto;
+    height: 3vh;
+  }
+}
+/*--------section 1----------*/
+.section1{
+  color: white;
+  margin-top: 8vh;
+  padding-top: 6vh;
+  /*min-height: 80vh;*/
+width: 100%;
+ background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
+    url("images/img2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    animation: background 10s alternate infinite;
+}
+.job{
+  padding: 50px 0;
+}
+.section1 input[type="email"] {
+  border: 1px soild white;
+  outline: 1px solid grey;
+  
+}
+label{
+ margin-bottom: 0;
+ font-size: 18px; 
+}
+.btn1{
+  border-radius: 50px;
+  background: none!important;
+  border: 1px solid #fff!important;
+  color: #fff;
+}
+.btn1:hover{
+  background: white!important;
+  color: #2ecab6!important;
+}
+
+
+@keyframes background{
+  0%, 100%{
+     background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
+    url("images/img2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    background-attachment: fixed;
+  }
+  25%{
+     background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
+    url("images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    background-attachment: fixed;
+  }
+ 50%{
+     background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
+    url("images/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    background-attachment: fixed;
+  }
+  75%{
+     background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
+    url("images/img5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px){
+ .section1{
+  animation: none;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/img2.jpeg");
+    color: white;
+}
+}
+/*--------------------featured jobs section----------------*/
+.fjob .card{
+  margin-bottom: 5px;
+  
+}
+.fa-map-marker-alt,.fa-black-tie,.fa-calendar-alt{
+  color: #2ecab6;
+}
+.card-header{
+  color: #2ecab6;
+  font-size: 20px;
+}
+.apply{
+  background: #2ecab6!important;
+}
+.page-link{
+  color: #2ecab6!important;
+}
+.page-item.active .page-link{
+  color: #fff!important;
+  background: #2ecab6!important;
+}
+.morecontent span {
+  display: none;
+}
+/*---------------------------last part start---------------------------------------------*/
+.fa-handshake,
+.fa-user-shield,
+.fa-hand-holding-heart {
+  color: #2ecab6;
+  font-size: 20px;
+}
+
+footer {
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.teal.accent-3 {
+  background-color: #1de9b6 !important;
+}
+.footer-links a:hover {
+  font-weight: bold !important;
+  text-decoration: underline;
+  color: white;
+}
+.to-top i {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 25px;
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.to-top i.active {
+  bottom: 25px;
+  pointer-events: auto;
+  opacity: 1;
+}
+/*---------------------------last part end---------------------------------------------*/
